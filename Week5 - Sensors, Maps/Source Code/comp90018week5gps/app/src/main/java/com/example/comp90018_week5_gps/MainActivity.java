@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     LocationCallback locationCallBack;
 
+    private final int Request_Code_Location = 22;
+
     // Widgets
     private TextView latttv;
     private TextView longtv;
@@ -93,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
         }else{
             //if user hasn't granted permission, ask for it explicitly
-            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, Request_Code_Location);
         }
 
     }
@@ -104,4 +106,13 @@ public class MainActivity extends AppCompatActivity {
         longtv.setText(String.valueOf(location.getLongitude()));
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(requestCode == Request_Code_Location){
+            if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                updateLocation();
+            }
+        }
+    }
 }
