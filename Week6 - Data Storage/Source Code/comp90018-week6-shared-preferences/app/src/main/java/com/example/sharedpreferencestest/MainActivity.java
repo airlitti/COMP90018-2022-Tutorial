@@ -8,12 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+
     private final static String PREFERENCE_NAME = "data";
     private final static String OBJECT_NAME = "name";
     private final static String OBJECT_AGE = "age";
 
-    EditText name;
-    EditText age;
+    private EditText name;
+    private EditText age;
+    private Button saveData;
+    private Button restoreData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
         name = (EditText) findViewById(R.id.name);
         age = (EditText) findViewById(R.id.age);
+        saveData = (Button) findViewById(R.id.save_data);
+        restoreData = (Button) findViewById(R.id.restore_data);
 
-        Button saveData = (Button) findViewById(R.id.save_data);
         saveData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.apply();
             }
         });
-        Button restoreData = (Button) findViewById(R.id.restore_data);
+
         restoreData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,5 +47,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }

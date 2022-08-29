@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FilePersistenceTest.iml" filepath="$PROJECT_DIR$/FilePersistenceTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp90018-week6-internal-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/comp90018-week6-internal-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/comp90018-week6-internal-storage.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/comp90018-week6-internal-storage.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/comp90018-week6-internal-storage.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/comp90018-week6-internal-storage.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/comp90018-week6-internal-storage.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/comp90018-week6-internal-storage.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/comp90018-week6-internal-storage.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/comp90018-week6-internal-storage.app.unitTest.iml" />
     </modules>
   </component>
 </project>
