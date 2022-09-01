@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         displayField = findViewById(R.id.message_display);
         messageButton = findViewById(R.id.message_button);
 
-        initialFireBase("Test2");
+        initialFireBase("Test");
 
         messageButton.setOnClickListener(new View.OnClickListener() {
             @Override
