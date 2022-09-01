@@ -17,6 +17,13 @@ import com.google.firebase.database.ValueEventListener;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+// TO DO before running properly
+// 1. Create a Firebase account and establish a project (https://firebase.google.com)
+// 2. Links the project with this application (follow the steps of Firebase)
+// 3. Create a real time database in the Firebase project
+
+//Tips:
+// 1. Add the use of Firebase real-time database in your gradle settings: https://firebase.google.com/docs/database/android/start
 
 public class MainActivity extends AppCompatActivity {
 
