@@ -9,14 +9,14 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final static String PREFERENCE_NAME = "data";
-    private final static String OBJECT_NAME = "name";
-    private final static String OBJECT_AGE = "age";
-
     private EditText name;
     private EditText age;
     private Button saveData;
     private Button restoreData;
+
+    private final String PREFERENCE_NAME = "data";
+    private final String OBJECT_NAME = "name";
+    private final String OBJECT_AGE = "age";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences.Editor editor = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE).edit();
                 editor.putString(OBJECT_NAME, String.valueOf(name.getText()));
-                editor.putInt(OBJECT_AGE, Integer.valueOf(String.valueOf(age.getText())));
+                editor.putInt(OBJECT_AGE, Integer.parseInt(String.valueOf(age.getText())));
                 editor.apply();
             }
         });
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences pref = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE);
                 name.setText(pref.getString(OBJECT_NAME, ""));
-                age.setText(String.valueOf(pref.getInt(OBJECT_AGE, 0)));
+                age.setText(String.valueOf(pref.getInt(OBJECT_AGE,0)));
             }
         });
     }

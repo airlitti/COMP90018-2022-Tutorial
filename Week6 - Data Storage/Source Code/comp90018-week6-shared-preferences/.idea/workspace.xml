@@ -5,18 +5,23 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb9991f5-5ac0-43b3-a4c1-0799e5a3bdf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/app/src/main/java/com/example/filepersistencetest/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/app/src/main/java/com/example/filepersistencetest/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comp90018-week6-internal-storage/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../comp90018-week6-internal-storage/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

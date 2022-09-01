@@ -13,6 +13,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -23,12 +24,11 @@ import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final static String FILE_NAME = "data";
-    private final static String CACHED_FILE_NAME = "cached_data";
-
     private EditText edit;
     private Button savebt;
     private Button loadbt;
+
+    private final String FILE_NAME = "myFile";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,50 +44,52 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String inputText = edit.getText().toString();
                 save(inputText);
-                Toast.makeText(getApplicationContext(), "Data saved", Toast.LENGTH_SHORT).show();
             }
         });
 
         loadbt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String inputText = load();
-                edit.setText(inputText);
-                Toast.makeText(getApplicationContext(), "Restoring succeeded", Toast.LENGTH_SHORT).show();
+                String outputText = load();
+                edit.setText(outputText);
             }
         });
     }
 
-    public void save(String inputText) {
-        FileOutputStream out = null;
-        BufferedWriter writer = null;
+    private void save(String inputText){
+        FileOutputStream out;
+        BufferedWriter writer;
 
         try {
-            out = openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
+            out = openFileOutput(FILE_NAME, MODE_PRIVATE);
             writer = new BufferedWriter(new OutputStreamWriter(out));
             writer.write(inputText);
             writer.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public String load() {
-        FileInputStream in = null;
-        BufferedReader reader = null;
-        StringBuilder content = new StringBuilder();
+    private String load(){
+        FileInputStream in;
+        BufferedReader reader;
+        StringBuilder myString = new StringBuilder();
 
         try {
             in = openFileInput(FILE_NAME);
             reader = new BufferedReader(new InputStreamReader(in));
             String line = "";
-            while ((line = reader.readLine()) != null) {
-                content.append(line);
+            while((line = reader.readLine()) != null){
+                myString.append(line);
             }
             reader.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return content.toString();
+        return myString.toString();
     }
 }
